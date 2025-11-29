@@ -3,4 +3,5 @@
 value1=52
 value2=52
 
-echo "value are ${{$value1+$value2}}"
+sum=$(($value1+$value2))
+echo "value are :: ${sum} "
