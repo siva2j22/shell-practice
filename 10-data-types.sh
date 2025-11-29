@@ -11,5 +11,5 @@ echo "value are :: ${sum} "
 leaders=("siva" "charan" "prasad")
 
 echo "array output are:  ${leaders[@]}" 
-echo "first value in the list:  ${leaders[1]}" 
+echo "first value in the list:  ${leaders[0]}" 
 echo "10 values are:  ${leaders[10]}" 
