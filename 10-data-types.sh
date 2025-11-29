@@ -9,4 +9,4 @@ echo "value are :: ${sum} "
 
 leaders=("siva" "charan" "prasad")
 
-echo "array output are ${leader}[@]"
+echo "array output are ${leader[@]}"
