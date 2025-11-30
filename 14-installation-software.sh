@@ -2,7 +2,7 @@
 
 USERID=$(id -u)
 
-if [ $USERID -ne 0]; then
+if [ $USERID -ne 0 ]; then
     echo "error not the root user"
     exit 22
 else
@@ -10,7 +10,7 @@ else
 
 dnf install mysql -y
 
-if [ $? -ne 0]; then
+if [ $? -ne 0 ]; then
     echo "software installed failed:"
     exit 2
 else
@@ -19,7 +19,7 @@ fi
 
 dnf install nginz -y
 
-if [ $? -ne 0]; then
+if [ $? -ne 0 ]; then
     echo "software installed failed:"
     exit 2
 else
