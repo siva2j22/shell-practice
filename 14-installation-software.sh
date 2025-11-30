@@ -11,7 +11,7 @@ else
 dnf install mysql -y
 
 if [ $? -ne 0]; then
-    echo "software installed failed:
+    echo "software installed failed:"
     exit 2
 else
     echo "sftware install success"
@@ -20,7 +20,7 @@ fi
 dnf install nginz -y
 
 if [ $? -ne 0]; then
-    echo "software installed failed:
+    echo "software installed failed:"
     exit 2
 else\
     echo "sftware install success"
