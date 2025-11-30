@@ -22,6 +22,6 @@ dnf install nginz -y
 if [ $? -ne 0]; then
     echo "software installed failed:"
     exit 2
-else\
+else
     echo "sftware install success"
 fi
