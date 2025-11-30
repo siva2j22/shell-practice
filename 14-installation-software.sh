@@ -5,23 +5,19 @@ USERID=$(id -u)
 if [ $USERID -ne 0 ]; then
     echo "error not the root user"
     exit 22
-else
-    echo "root user"
+fi
 
+VALIDATE() {
+if [ $1 -ne 0 ]; then
+    echo "software installed $2 failed:"
+    exit 2
+else
+    echo "sOftware install $2 success"
+fi
+
+}
 dnf install mysql -y
+VALIDATE $? "mysql"
 
-if [ $? -ne 0 ]; then
-    echo "software installed failed:"
-    exit 2
-else
-    echo "sftware install success"
-fi
-
-dnf install nginz -y
-
-if [ $? -ne 0 ]; then
-    echo "software installed failed:"
-    exit 2
-else
-    echo "sftware install success"
-fi
+dnf install nginx -y
+VALIDATE $? "nginx"
