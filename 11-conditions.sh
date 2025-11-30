@@ -14,7 +14,7 @@ fi
 # -eq
 # -ne
 
-
+#sample condition value
 value1=10
 
 if [ $value1 -et 10 ]; then
@@ -22,3 +22,5 @@ if [ $value1 -et 10 ]; then
     else
     echo "$value1 is not equal to 10"
 fi
+
+
