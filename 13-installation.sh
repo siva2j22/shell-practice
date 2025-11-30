@@ -2,7 +2,7 @@
 
 USERID=$(id -u)
 
-if [ USERID -ne 0 ]; then
+if [ $USERID -ne 0 ]; then
     echo "Error:: please run with root previlages"
     exit 25
 fi
